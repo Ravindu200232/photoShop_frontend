@@ -12,9 +12,7 @@ import { Team } from "../../components/team";
 export function Home() {
     return (
         <div>
-            <div style={{ position: "fixed", top: 0, width: "100%", zIndex: 1000 }}>
-                <Navbar />
-            </div>
+            
             <div style={{ marginTop: "60px" }}>
                 <Banner />
                 <Team/>
@@ -24,7 +22,7 @@ export function Home() {
                 <NewsLetter/>
                 <Blog/>
                 <Reviews/>
-                <Footer/>
+                
 
             </div>
         </div>
