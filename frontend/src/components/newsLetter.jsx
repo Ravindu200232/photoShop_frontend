@@ -12,7 +12,7 @@ export function NewsLetter() {
       className="bg-cover bg-center bg-no-repeat h-[80vh] flex items-center justify-center"
       style={{
         backgroundImage:
-          `linear-gradient(180deg, rgba(0,0,0,0.43) 60%, #020202), url(https://i.ibb.co/zSS31yY/groom-black-tuxedo-hugs-tender-stunning-bride-while-they-stand-8353-8050.jpg)`
+          `linear-gradient(180deg, rgba(0,0,0,0.43) 60%, #020202), url(/nl.jpg)`
       }}
     >
       <div className="w-full px-4 md:px-12">
@@ -28,15 +28,15 @@ export function NewsLetter() {
               Get updated on every new offer on your packages. We would be happy to help you coordinate the perfect photographer with the perfect package for your big day. We are available to talk — just email anytime!
             </p>
             <div className="mt-8">
-              <form className="flex flex-col sm:flex-row gap-4">
+              <form className="flex flex-col border-1 border-gray-500 rounded-xl sm:flex-row gap-4">
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="px-6 py-3 w-full sm:w-auto flex-1 text-black rounded"
+                  className="px-6 py-3 w-full sm:w-auto flex-1 text-white  placeholder:text-white"
                 />
                 <button
                   type="submit"
-                  className="bg-orange-600 text-white px-8 py-3 rounded hover:bg-orange-700 transition"
+                  className="bg-orange-600 text-white px-8 py-3 rounded-xl hover:bg-orange-700 transition"
                 >
                   Subscribe
                 </button>
