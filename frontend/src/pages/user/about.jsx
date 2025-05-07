@@ -8,22 +8,24 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Fix default marker icon issue in React-Leaflet
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
 const About = () => {
-  const mapContainerStyle = {
-    width: "100%",
-    height: "400px",
-  };
-
-  const center = {
-    lat: -36.8509, // Auckland, NZ
-    lng: 174.7645,
-  };
-
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyCMMHWV8VSCEoqws7_Rh2Crea_rSPvv1t0", // Replace with your own key if needed
-  });
+  const position = [-36.8509, 174.7645]; // Auckland, NZ
 
   return (
     <div className="pt-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-white">
@@ -31,11 +33,7 @@ const About = () => {
       <motion.div
         className="text-center mb-12"
         initial={{ y: -100, opacity: 0 }}
-        animate={{
-          y: 0,
-          opacity: 1,
-          transition: { duration: 1, type: "spring" },
-        }}
+        animate={{ y: 0, opacity: 1, transition: { duration: 1, type: "spring" } }}
       >
         <h3 className="text-lg text-gray-400 tracking-wide mb-2">
           <FaUser className="inline-block mr-2 text-primary" />
@@ -51,11 +49,7 @@ const About = () => {
         {/* Profile Image */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            transition: { duration: 1, delay: 0.5 },
-          }}
+          animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <img
             src="/profile.jpg"
@@ -68,11 +62,7 @@ const About = () => {
         {/* Text Content */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            transition: { duration: 1, delay: 0.5 },
-          }}
+          animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <h2 className="text-3xl font-semibold mb-2 text-center md:text-left">
             Roy Dissanayake
@@ -82,14 +72,7 @@ const About = () => {
             <TypeAnimation
               className="text-xl sm:text-2xl font-bold text-primary text-center md:text-left"
               cursor
-              sequence={[
-                "A Photographer",
-                2000,
-                "A Designer",
-                2000,
-                "A Creator",
-                2000,
-              ]}
+              sequence={["A Photographer", 2000, "A Designer", 2000, "A Creator", 2000]}
               wrapper="span"
               repeat={Infinity}
             />
@@ -143,22 +126,20 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* Google Map */}
+      {/* Leaflet Map */}
       <div className="mt-12">
         <h2 className="text-center text-lg font-semibold text-gray-400 mb-4">
           My Location
         </h2>
-        {isLoaded ? (
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            center={center}
-            zoom={12}
-          >
-            <Marker position={center} />
-          </GoogleMap>
-        ) : (
-          <p className="text-center text-gray-400">Loading map...</p>
-        )}
+        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }}>
+          <TileLayer
+            attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>Roy is located here in Auckland, NZ</Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   );
