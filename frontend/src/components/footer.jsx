@@ -57,7 +57,7 @@ export default function Footer() {
           <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
           <p className="text-gray-400">Email: rohitha.me94@gmail.com</p>
           <p className="text-gray-400">Phone: +64 204166 3202</p>
-          <p className="text-gray-400">Location: Auckland, New Zealand</p>
+          <p className="text-gray-400">Location: 224 Sandwich Road, St Andrews, Hamilton 3200 New zealand</p>
         </div>
 
         {/* Social Media Section */}
