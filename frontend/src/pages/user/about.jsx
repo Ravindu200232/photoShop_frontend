@@ -8,10 +8,26 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 const About = () => {
+  const mapContainerStyle = {
+    width: "100%",
+    height: "400px",
+  };
+
+  const center = {
+    lat: -36.8509, // Auckland, NZ
+    lng: 174.7645,
+  };
+
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyCMMHWV8VSCEoqws7_Rh2Crea_rSPvv1t0", // Replace with your own key if needed
+  });
+
   return (
     <div className="pt-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-white">
+      {/* Header */}
       <motion.div
         className="text-center mb-12"
         initial={{ y: -100, opacity: 0 }}
@@ -30,6 +46,7 @@ const About = () => {
         </h1>
       </motion.div>
 
+      {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Profile Image */}
         <motion.div
@@ -91,7 +108,7 @@ const About = () => {
             that exceed expectations.
           </p>
 
-          {/* Contact Info + Portfolio Button */}
+          {/* Contact Info */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-200 text-sm">
             <div className="flex items-center gap-2">
               <FaUser className="text-primary" />
@@ -124,6 +141,24 @@ const About = () => {
             </a>
           </div>
         </motion.div>
+      </div>
+
+      {/* Google Map */}
+      <div className="mt-12">
+        <h2 className="text-center text-lg font-semibold text-gray-400 mb-4">
+          My Location
+        </h2>
+        {isLoaded ? (
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            center={center}
+            zoom={12}
+          >
+            <Marker position={center} />
+          </GoogleMap>
+        ) : (
+          <p className="text-center text-gray-400">Loading map...</p>
+        )}
       </div>
     </div>
   );

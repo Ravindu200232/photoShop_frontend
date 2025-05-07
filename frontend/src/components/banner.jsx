@@ -36,7 +36,7 @@ export function Banner() {
             </p>
           </p>
 
-          <Link to="/addPackage">
+          <Link to="/package">
             <button className="relative inline-block w-full sm:w-auto px-6 py-3 border-4 border-orange-600 text-orange-600 font-semibold uppercase tracking-wider overflow-hidden group hover:text-black transition">
               <span className="absolute w-0 h-full bg-orange-600  top-0 left-0 group-hover:w-full transition-all duration-500 ease-in-out z-0"></span>
               <span className="relative z-10 font-bold">All Packages</span>
