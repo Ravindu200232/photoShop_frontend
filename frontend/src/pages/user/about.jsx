@@ -103,7 +103,7 @@ const About = () => {
             </div>
             <div className="flex items-center gap-2">
               <FaEnvelope className="text-primary" />
-              <span>rohitha@example.com</span>
+              <span>rohitha.me94@gmail.com </span>
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-primary" />
