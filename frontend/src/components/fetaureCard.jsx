@@ -31,7 +31,7 @@ const FeatureCards = () => {
     <div className="Features-section py-16 bg-black">
       <Container>
         <div className="Feature-title text-center mb-10" data-aos="fade-right">
-          <h3 className="google-font text-warning">What We Offer</h3>
+          <h3 className="google-font text-warning text-amber-300">What We Offer</h3>
           <h2 className="text-[2.6rem] text-[#e8e4e4bf] pb-4">
           Explore & Choose What’s Best for Your Property!
           </h2>
