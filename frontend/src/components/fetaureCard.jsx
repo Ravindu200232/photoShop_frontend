@@ -11,19 +11,19 @@ const FeatureCards = () => {
 
   const cards = [
     {
-      img: "https://i.ibb.co/7t70r25/photo-1634061330609-efe8060bc966-ixlib-rb-1-2.jpg",
-      name: "Simple, Customisable Packages, High Res Images in Two Working Days",
-      dis: "Your wedding. Your way. Pick from one of our two simple customisable photography packages.",
+      img: "/f1.jpg",
+      name: "Simple, Customisable Packages, High-Res Images in Two Working Days",
+      dis: "Get high-quality photos of your property – fast. Choose from two streamlined packages that you can customise to suit your real estate or commercial needs.",
     },
     {
-      img: "https://i.ibb.co/gMNfQJm/photo-1460364157752-926555421a7e-ixlib-rb-1-2.jpg",
+      img: "/f2.jpg",
       name: "Our Photographer Captures Flawless, On-Trend Images Every Time",
-      dis: "Capture the emotion of your day with beautiful candid images. View our gallery for inspiration.",
+      dis: "Present your property in its best light. From wide-angle interior shots to striking exteriors, we deliver professional photos that impress buyers and clients. View our gallery for inspiration.",
     },
     {
-      img: "https://i.ibb.co/Nyfx58s/photo-1628702840326-8d2e62bf7822-ixlib-rb-1-2.jpg",
-      name: "Affordable, Combo packages With Flexible Payment Options",
-      dis: "Photography packages that work with your wedding budget. Pay at a pace that works for you.",
+      img: "/f3.jpg",
+      name: "Affordable Combo Packages With Flexible Payment Options",
+      dis: "Professional photography that fits your marketing budget. Select a package that works for you and pay with flexible options.",
     },
   ];
 
@@ -33,7 +33,7 @@ const FeatureCards = () => {
         <div className="Feature-title text-center mb-10" data-aos="fade-right">
           <h3 className="google-font text-warning">What We Offer</h3>
           <h2 className="text-[2.6rem] text-[#e8e4e4bf] pb-4">
-            Explore & choose what's best for you!
+          Explore & Choose What’s Best for Your Property!
           </h2>
         </div>
        <div >

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import blog1 from "/b1.jpg";
-import blog2 from "/b2.jpg";
-import blog3 from "/b3.jpg";
+import blog1 from "/blog1.png";
+import blog2 from "/blog2.png";
+import blog3 from "/blog3.png";
 
 export function Blog() {
   useEffect(() => {
@@ -41,16 +41,13 @@ export function Blog() {
               <img src={blog1} alt="Blog 1" className="w-full h-auto rounded" />
               <div className="text-white mt-4 text-left">
                 <h1 className="text-xl md:text-2xl font-semibold text-gray-300">
-                  10 Tips For Planning A Wedding On A Budget
+                10 Tips for Capturing Stunning Property Photos on a Budget
                 </h1>
                 <small className="block text-gray-400 mt-3 mb-3">
-                  Dec 22, 2021
+                May 1, 2025
                 </small>
                 <p className="text-gray-400 leading-relaxed text-sm">
-                  Plenty of people dream of having the most beautiful, elaborate
-                  wedding their budget will allow... The best way to stick to
-                  your budget is by staying organized. You can do that by
-                  building a spreadsheet...
+                You don’t need a massive budget to make your listing stand out. From choosing the right time of day to preparing each space properly, these tips will help you get the most out of your shoot without overspending...
                 </p>
                 <button disabled className="text-orange-600 mt-4 text-sm">
                   read more
@@ -70,12 +67,11 @@ export function Blog() {
               />
               <div className="text-white mt-3 text-left">
                 <h1 className="text-lg font-medium text-gray-300">
-                  How To Make Your Photographer Feel Appreciated
+                How to Get the Best Results From Your Photographer
                 </h1>
-                <small className="block text-gray-400 mt-2">Nov 12, 2021</small>
+                <small className="block text-gray-400 mt-2">April 20, 2025</small>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Before, during, and after your wedding, your photographer will
-                  do everything in their power...
+                Real estate photography is a team effort. Learn how agents, homeowners, and photographers can work together before and during the shoot to ensure the best visual outcome...
                 </p>
                 <button disabled className="text-orange-600 mt-2 text-sm">
                   read more
@@ -92,12 +88,11 @@ export function Blog() {
               />
               <div className="text-white mt-3 text-left">
                 <h1 className="text-lg font-medium text-gray-300">
-                  Maximizing The Value Of Your Photographer
+                Maximizing the Value of Your Property Shoot
                 </h1>
-                <small className="block text-gray-400 mt-2">Oct 12, 2021</small>
+                <small className="block text-gray-400 mt-2">April 5, 2025</small>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  As a veteran wedding photographer, one of my main jobs is to
-                  tell your story through images...
+                As a seasoned real estate photographer, my job is to showcase your space in the best light. Here’s how you can prepare and what to expect to ensure top-notch results from your shoot...
                 </p>
                 <button disabled className="text-orange-600 mt-2 text-sm">
                   read more

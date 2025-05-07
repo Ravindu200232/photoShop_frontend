@@ -13,9 +13,7 @@ const SingleCard = ({ card }) => {
           <h2 className="text-xl font-semibold mb-2">{name}</h2>
           <p className="text-white mb-4">{dis}</p>
           <Link to="/allPackages">
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
-              Explore More
-            </button>
+            
           </Link>
         </div>
       </div>

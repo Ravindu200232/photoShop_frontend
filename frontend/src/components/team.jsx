@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function Team() {
   useEffect(() => {
@@ -18,14 +17,17 @@ export function Team() {
               <img
                 src={"./t1.jpg"}
                 alt="Photographer 1"
-                className="w-full rounded-[80px] brightness-75 contrast-115 saturate-100"
+                className="w-full h-[700px] object-cover rounded-[80px] brightness-75 contrast-115 saturate-100"
               />
             </div>
-            <div className="absolute w-[48%] -bottom-8 md:-right-12 right-0" data-aos="fade-up">
+            <div
+              className="absolute w-[48%] -bottom-8 md:-right-12 right-0"
+              data-aos="fade-up"
+            >
               <img
                 src={"./t3.jpg"}
                 alt="Photographer 2"
-                className="w-full rounded-[50px] brightness-75 contrast-115 saturate-100"
+                className="w-full h-[300px]  object-cover  rounded-[50px] brightness-75 contrast-115 saturate-100"
               />
             </div>
           </div>
@@ -33,19 +35,23 @@ export function Team() {
           {/* Right Content Section */}
           <div className="text-white" data-aos="fade-right">
             <div className="pt-10">
-              <h4 className="text-yellow-400 text-lg font-semibold mb-3">Our Photographer</h4>
-              <h1 className="text-3xl md:text-4xl font-poppins text-[#e8e4e4bf] leading-tight mb-6">
-                The trusted, professional wedding photography team loved by couples
+              <h4 className="text-yellow-400 text-4xl font-semibold mb-3">
+                Our Photographer
+              </h4>
+              <h1 className="text-3xl md:text-3xl font-poppins text-[#e8e4e4bf] leading-tight mb-6">
+              The trusted, professional photography team preferred by agents, developers, and business owners
               </h1>
             </div>
             <div className="border-b border-white/20 pb-9">
               <p className="text-gray-400 text-justify">
-                Your photographer will get in touch closer to your wedding to go over all of your
-                on-day details. You can contact our team at any time to update your details and
-                provide us with more information on your wedding. After your wedding your images are
-                all provided to our team of professional photo editors who will edit them in style
-                - beautiful, bright and colourful. You will receive all of your images as high
-                resolution jpegs ready to print and share.
+                At ROYFILMS, our photographer brings passion, a fresh
+                perspective, and a sharp eye for detail to every project. As a
+                dedicated newcomer in the field, we combine creativity with the
+                latest techniques to deliver stunning visuals that highlight
+                what makes your property unique. We don’t just take pictures we
+                capture stories, moods, and moments that help buyers connect.
+                Professional, approachable, and committed to quality, our goal
+                is simple: to make your property look its absolute best.
               </p>
             </div>
           </div>

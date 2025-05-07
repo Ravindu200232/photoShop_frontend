@@ -28,9 +28,9 @@ export function Navbar() {
         <Link to="/" className="text-[18px] hover:text-gray-400">
           Home
         </Link>
-        <Link to="/contact" className="text-[18px] hover:text-gray-400">
-          Contact
-        </Link>
+        <a href="/contact" className="text-[18px] hover:text-gray-400">
+          About
+        </a>
         <Link to="/gallery" className="text-[18px] hover:text-gray-400">
           Gallery
         </Link>
