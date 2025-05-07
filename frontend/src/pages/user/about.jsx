@@ -21,8 +21,6 @@ const About = () => {
     lng: 174.7645, // Longitude of Auckland, NZ
   };
 
- 
-
   return (
     <div className="pt-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-white">
       <motion.div
@@ -144,7 +142,7 @@ const About = () => {
         <h2 className="text-center text-lg font-semibold text-gray-400 mb-4">
           My Location
         </h2>
-        <LoadScript googleMapsApiKey="AIzaSyCMMHWV8VSCEoqws7_Rh2Crea_rSPvv1t0">
+        <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <GoogleMap
             mapContainerStyle={mapContainerStyle}
             center={center}
