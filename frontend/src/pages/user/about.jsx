@@ -8,19 +8,8 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const About = () => {
-  const mapContainerStyle = {
-    width: "100%",
-    height: "400px",
-  };
-
-  const center = {
-    lat: -36.8509, // Latitude of Auckland, NZ
-    lng: 174.7645, // Longitude of Auckland, NZ
-  };
-
   return (
     <div className="pt-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-white">
       <motion.div
@@ -135,22 +124,6 @@ const About = () => {
             </a>
           </div>
         </motion.div>
-      </div>
-
-      {/* Google Map showing Auckland location */}
-      <div className="mt-12">
-        <h2 className="text-center text-lg font-semibold text-gray-400 mb-4">
-          My Location
-        </h2>
-        <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            center={center}
-            zoom={12}
-          >
-            <Marker position={center} />
-          </GoogleMap>
-        </LoadScript>
       </div>
     </div>
   );
