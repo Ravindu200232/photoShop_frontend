@@ -15,9 +15,9 @@ export function Team() {
           <div className="relative" data-aos="fade-left">
             <div className="w-full">
               <img
-                src={"./t1.jpg"}
+                src={"./t3.jpg"}
                 alt="Photographer 1"
-                className="w-full  rounded-[80px] brightness-75 contrast-115 saturate-100"
+                className="w-[600px] h-[400px] md:h-[600px] object-cover  rounded-[80px] brightness-75 contrast-115 saturate-100"
               />
             </div>
             <div
@@ -25,9 +25,9 @@ export function Team() {
               data-aos="fade-up"
             >
               <img
-                src={"./t3.jpg"}
+                src={"./t1.jpg"}
                 alt="Photographer 2"
-                className="w-full   rounded-[50px] brightness-75 contrast-115 saturate-100"
+                className="w-[300px] h-[200px] md:h-[300px] object-cover   rounded-[50px] brightness-75 contrast-115 saturate-100"
               />
             </div>
           </div>

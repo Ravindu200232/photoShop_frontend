@@ -8,25 +8,8 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-
-// Fix default marker icon issue in React-Leaflet
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
-
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
 
 const About = () => {
-  const position = [-36.8509, 174.7645]; // Auckland, NZ
-
   return (
     <div className="pt-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Header */}
@@ -103,11 +86,11 @@ const About = () => {
             </div>
             <div className="flex items-center gap-2">
               <FaEnvelope className="text-primary" />
-              <span>rohitha.me94@gmail.com </span>
+              <span>rohitha.me94@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-primary" />
-              <span>Auckland, New Zealand</span>
+              <span>224 Sandwich Road, St Andrews, Hamilton 3200 New zealand</span>
             </div>
           </div>
 
@@ -126,20 +109,23 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* Leaflet Map */}
+      {/* Google Maps Embed */}
       <div className="mt-12">
         <h2 className="text-center text-lg font-semibold text-gray-400 mb-4">
           My Location
         </h2>
-        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }}>
-          <TileLayer
-            attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={position}>
-            <Popup>Roy is located here in Auckland, NZ</Popup>
-          </Marker>
-        </MapContainer>
+        <div className="w-full h-[450px] rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.785749254697!2d175.2470759!3d-37.7481703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22f3ce2cbadd%3A0x9e5fcd83dfadd5dd!2s224%20Sandwich%20Road%2C%20St%20Andrews%2C%20Hamilton%203200%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1746645849485!5m2!1sen!2slk"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Map Location"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
