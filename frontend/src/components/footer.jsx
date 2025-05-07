@@ -8,45 +8,45 @@ export default function Footer() {
   return (
     <footer className="w-screen bg-black text-white py-10">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between px-6 md:px-12 gap-8">
-        {/* Company Section */}
+        {/* About Section */}
         <div className="w-full sm:w-[45%] md:w-1/4 text-center md:text-left">
-          <h1 className="text-xl font-semibold mb-4">Company</h1>
+          <h1 className="text-xl font-semibold mb-4">About Roy</h1>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <a href="#" className="hover:text-white">
-                Contact Us
+              <a href="/about" className="hover:text-white">
+                My Story
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
-                Our Services
+              <a href="/portfolio" className="hover:text-white">
+                Portfolio
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
-                Privacy Policy
+              <a href="/testimonials" className="hover:text-white">
+                Testimonials
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Support Section */}
+        {/* Services Section */}
         <div className="w-full sm:w-[45%] md:w-1/4 text-center md:text-left">
-          <h1 className="text-xl font-semibold mb-4">Support</h1>
+          <h1 className="text-xl font-semibold mb-4">Photography Services</h1>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <a href="#" className="hover:text-white">
-                FAQs
+              <a href="/services/real-estate" className="hover:text-white">
+                Real Estate Photography
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
-                Shipping & Returns
+              <a href="/services/commercial" className="hover:text-white">
+                Commercial Projects
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
-                Terms & Conditions
+              <a href="/services/events" className="hover:text-white">
+                Event Coverage
               </a>
             </li>
           </ul>
@@ -55,22 +55,37 @@ export default function Footer() {
         {/* Contact Section */}
         <div className="w-full sm:w-[45%] md:w-1/4 text-center md:text-left">
           <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
-          <p className="text-gray-400">Email: support@.com</p>
-          <p className="text-gray-400">Phone: +1 234 567 890</p>
-          <p className="text-gray-400">Location: 123  Street, NY</p>
+          <p className="text-gray-400">Email: rohitha.me94@gmail.com</p>
+          <p className="text-gray-400">Phone: +64 204166 3202</p>
+          <p className="text-gray-400">Location: Auckland, New Zealand</p>
         </div>
 
         {/* Social Media Section */}
         <div className="w-full sm:w-[45%] md:w-1/4 text-center md:text-left">
-          <h1 className="text-xl font-semibold mb-4">Follow Us</h1>
+          <h1 className="text-xl font-semibold mb-4">Follow Me</h1>
           <div className="flex justify-center md:justify-start space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-2xl">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-2xl"
+            >
               <AiOutlineFacebook />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white text-2xl">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-2xl"
+            >
               <AiOutlineTwitter />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white text-2xl">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-2xl"
+            >
               <AiOutlineInstagram />
             </a>
           </div>
@@ -79,7 +94,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="text-center text-gray-500 mt-8 text-sm">
-        &copy; {new Date().getFullYear()} AudioStore. All rights reserved.
+        &copy; {new Date().getFullYear()} ROYFILMS. All rights reserved.
       </div>
     </footer>
   );

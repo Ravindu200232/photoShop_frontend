@@ -1,58 +1,45 @@
-import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import * as React from 'react';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 
-
-const AdminCalendar = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-  const [availableDates, setAvailableDates] = useState([
-    "2025-05-10",
-    "2025-05-15",
-    "2025-05-20",
-  ]);
-
-  const toggleDate = (date) => {
-    const dateStr = date.toISOString().split("T")[0];
-    if (availableDates.includes(dateStr)) {
-      setAvailableDates((prev) => prev.filter((d) => d !== dateStr));
-    } else {
-      setAvailableDates((prev) => [...prev, dateStr]);
-    }
-  };
-
-  const tileClassName = ({ date, view }) => {
-    if (view === "month") {
-      const dateStr = date.toISOString().split("T")[0];
-      if (availableDates.includes(dateStr)) {
-        return "available-date"; // Custom class styled with Tailwind
-      }
-    }
-    return null;
-  };
-
+export default function AddWeekNumber() {
   return (
-    <div className="max-w-md mx-auto p-4 bg-white shadow-xl rounded-lg">
-      <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">
-        Admin Calendar
-      </h2>
-      <Calendar
-        onClickDay={(value) => {
-          setSelectedDate(value);
-          toggleDate(value);
-        }}
-        value={selectedDate}
-        tileClassName={tileClassName}
-      />
-      <div className="mt-4 text-center">
-        <p className="text-sm text-gray-600">
-          Selected: {selectedDate.toDateString()}
-        </p>
-        <p className="text-sm text-gray-600">
-          Click a date to toggle availability.
-        </p>
+    <LocalizationProvider
+      dateAdapter={AdapterDayjs}
+      localeText={{
+        calendarWeekNumberHeaderText: '#',
+        calendarWeekNumberText: (weekNumber) => `${weekNumber}.`,
+      }}
+    >
+      <div className="bg-gradient-to-r  text-white rounded-lg p-4 max-w-md mx-auto shadow-xl">
+        <div className="text-center mb-4">
+          <h2 className="text-2xl font-semibold">📅 Available Dates</h2>
+         
+        </div>
+        
+        <DateCalendar
+          displayWeekNumber
+          sx={{
+            '& .MuiTypography-root': {
+              color: 'white',
+            },
+            '& .MuiPickersDay-root': {
+              color: 'white',
+              backgroundColor: 'transparent',
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              },
+            },
+            '& .MuiPickersCalendarHeader-label': {
+              color: 'white',
+            },
+            '& .MuiPickersDay-root.Mui-selected': {
+              backgroundColor: 'rgba(255, 255, 255, 0.3)',
+            },
+          }}
+        />
       </div>
-    </div>
+    </LocalizationProvider>
   );
-};
-
-export default AdminCalendar;
+}

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import blog1 from "/b1.jpg";
-import blog2 from "/b2.jpg";
-import blog3 from "/b3.jpg";
+import blog1 from "/blog1.png";
+import blog2 from "/blog2.png";
+import blog3 from "/blog3.png";
 
 export function Blog() {
   useEffect(() => {

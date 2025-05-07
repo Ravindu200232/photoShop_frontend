@@ -26,14 +26,14 @@ export function Banner() {
 
           <p className="text-sm sm:text-base font-medium bg-gradient-to-r flex flex-col text-white bg-clip-text mb-8">
             <span className="text-red-600 text-2xl font-semibold">Welcome to ROYFILMS</span>
-            <i className="text-base sm:text-lg">
-              Your vision, captured. @ ROYFILMS, we provide real estate and
+            <p className="text-base sm:text-lg">
+              Your vision, captured. <span className="text-red-600">ROYFILMS</span>, we provide real estate and
               commercial photography and videography designed to showcase your
               property in the best light. Whether you're a realtor, developer,
               or small business, we deliver clean, eye-catching visuals that
               help you stand out. As a new and passionate company, we're
               committed to quality, creativity, and helping your space shine.
-            </i>
+            </p>
           </p>
 
           <Link to="/addPackage">
