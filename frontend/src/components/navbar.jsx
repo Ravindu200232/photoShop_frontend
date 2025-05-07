@@ -28,9 +28,9 @@ export function Navbar() {
         <Link to="/" className="text-[18px] hover:text-gray-400">
           Home
         </Link>
-        <a href="/contact" className="text-[18px] hover:text-gray-400">
+        <Link to="/contact" className="text-[18px] hover:text-gray-400">
           About
-        </a>
+        </Link>
         <Link to="/gallery" className="text-[18px] hover:text-gray-400">
           Gallery
         </Link>
@@ -57,16 +57,32 @@ export function Navbar() {
             onClick={handleMenuClose}
           />
 
-          <Link to="/" className="text-[24px] hover:text-gray-400" onClick={handleMenuClose}>
+          <Link
+            to="/"
+            className="text-[24px] hover:text-gray-400"
+            onClick={handleMenuClose}
+          >
             Home
           </Link>
-          <Link to="/contact" className="text-[24px] hover:text-gray-400" onClick={handleMenuClose}>
+          <Link
+            to="/contact"
+            className="text-[24px] hover:text-gray-400"
+            onClick={handleMenuClose}
+          >
             Contact
           </Link>
-          <Link to="/gallery" className="text-[24px] hover:text-gray-400" onClick={handleMenuClose}>
+          <Link
+            to="/gallery"
+            className="text-[24px] hover:text-gray-400"
+            onClick={handleMenuClose}
+          >
             Gallery
           </Link>
-          <Link to="/package" className="text-[24px] hover:text-gray-400" onClick={handleMenuClose}>
+          <Link
+            to="/package"
+            className="text-[24px] hover:text-gray-400"
+            onClick={handleMenuClose}
+          >
             Packages
           </Link>
         </div>
