@@ -4,7 +4,7 @@ const packages = [
   {
     title: 'Standard Media Package',
     image: 'v4.jpg',
-    description: '10 Photos, 2D Floor Plan',
+    description: '10 Photos',
     details: {
       photos: 10,
       dronePhotos: 0,
