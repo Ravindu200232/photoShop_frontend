@@ -8,7 +8,7 @@ export function Banner() {
         className="h-screen flex  items-center justify-center bg-cover bg-center relative"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, rgba(150, 40, 40, 0) 70%, rgba(2,2,2,0.7) 92%, black), url('./banner.jpg') ",
+            "linear-gradient(180deg, rgba(150, 40, 40, 0) 70%, rgba(2,2,2,0.7) 92%, black), url('./v23.jpg') ",
           filter: "blur(2px) brightness(0.7)",
         }}
       ></div>
