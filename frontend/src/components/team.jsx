@@ -12,12 +12,12 @@ export function Team() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Image Section */}
-          <div className="relative" data-aos="fade-left">
+          <div className="relative">
             <div className="w-full">
               <img
                 src={"./t3.jpg"}
                 alt="Photographer 1"
-                className="w-[600px] h-[400px] md:h-[600px] object-cover  rounded-[80px] brightness-75 contrast-115 saturate-100"
+                className="w-full md:w-[600px] h-[250px] md:h-[500px] object-cover rounded-[80px] brightness-75 contrast-115 saturate-100"
               />
             </div>
             <div
@@ -27,7 +27,7 @@ export function Team() {
               <img
                 src={"./t1.jpg"}
                 alt="Photographer 2"
-                className="w-[300px] h-[200px] md:h-[300px] object-cover   rounded-[50px] brightness-75 contrast-115 saturate-100"
+                className="w-[200px] md:w-[300px] h-[150px] md:h-[300px] object-cover rounded-[50px] brightness-75 contrast-115 saturate-100"
               />
             </div>
           </div>
@@ -35,15 +35,16 @@ export function Team() {
           {/* Right Content Section */}
           <div className="text-white" data-aos="fade-right">
             <div className="pt-10">
-              <h4 className="text-yellow-400 text-4xl font-semibold mb-3">
+              <h4 className="text-yellow-400 text-3xl md:text-4xl font-semibold mb-3">
                 Our Photographer
               </h4>
-              <h1 className="text-3xl md:text-3xl font-poppins text-[#e8e4e4bf] leading-tight mb-6">
-              The trusted, professional photography team preferred by agents, developers, and business owners
+              <h1 className="text-xl md:text-3xl font-poppins text-[#e8e4e4bf] leading-tight mb-6">
+                The trusted, professional photography team preferred by agents,
+                developers, and business owners
               </h1>
             </div>
             <div className="border-b border-white/20 pb-9">
-              <p className="text-gray-400 text-justify">
+              <p className="text-gray-400 text-justify text-sm md:text-base">
                 At ROYFILMS, our photographer brings passion, a fresh
                 perspective, and a sharp eye for detail to every project. As a
                 dedicated newcomer in the field, we combine creativity with the

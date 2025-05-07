@@ -16,7 +16,7 @@ import { FaWhatsapp, FaEnvelope, FaPhone } from "react-icons/fa";
 
 export function Home() {
   return (
-    <div>
+    <div > 
       <div style={{ marginTop: "60px" }} className="bg-black">
         <Banner />
         <Team />
