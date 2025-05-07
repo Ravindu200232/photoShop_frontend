@@ -1,5 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Font setup */
 body {
-    font-family: "Quicksand", serif;
-  }
-  
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+/* Banner Section */
+.banner {
+  background-image: url('/banner.jpg'); /* Or use /banner.jpg if image is in public/ */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.7) 90%,
+    black 100%
+  );
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.banner .container {
+  z-index: 10;
+  position: relative;
+}
+
+/* Responsive spacing for navbar + content */
+.mt-60px {
+  margin-top: 60px;
+}
+
+/* Button hover animation */
+button.group:hover span:first-child {
+  width: 100%;
+}
+
+/* Optional global utilities */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Add this to App.css */
+
+.bg-primary {
+  background-color: #1e293b; /* e.g., Tailwind slate-800 or custom dark */
+}
+
+.icon-button a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon-button a:hover {
+  color: #10b981; /* Tailwind green-500 as hover effect */
+}
+
