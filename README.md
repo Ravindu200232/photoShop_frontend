@@ -8,7 +8,7 @@ Welcome to the official repository of **Roy Films**, a professional photography 
 ## 🧑‍🎓 Employee
 
 * **Name:** D.M. Rohitha Prabath Dissanayaka
-* **Facebook Profile:** [https://www.facebook.com/share/19jURZmCB4/](https://www.facebook.com/share/19jURZmCB4/)
+* **Linkedin Profile:** [https://www.linkedin.com/in/rohitha-dissanayake-1643b516a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ---
 
