@@ -249,7 +249,7 @@ const About = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}>
             <a
-              href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold hover:from-yellow-600 hover:to-amber-700 hover:scale-105 transition-all duration-300 relative overflow-hidden group"
