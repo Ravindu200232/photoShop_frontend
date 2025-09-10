@@ -57,7 +57,7 @@ export default function AddWeekNumber() {
           }`}>
             <div className="relative inline-block">
               <h2 className="text-2xl font-semibold flex items-center justify-center gap-2">
-                <span className="text-3xl animate-bounce-slow">📅</span>
+                <span className="text-3xl animate-bounce-slow"></span>
                 <span className="relative">
                   Available Dates
                   {/* Animated underline */}

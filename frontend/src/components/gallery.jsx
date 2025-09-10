@@ -48,7 +48,7 @@ export function SmallGallery() {
         {/* Photography-themed floating icons */}
         <div className="absolute text-5xl text-purple-400/12 animate-float-gentle" style={{top: '25%', right: '30%'}}>📷</div>
         <div className="absolute text-4xl text-blue-400/10 animate-float-gentle delay-2000" style={{bottom: '30%', left: '15%'}}>🖼️</div>
-        <div className="absolute text-3xl text-cyan-300/8 animate-twinkle delay-4000" style={{top: '75%', left: '12%'}}>✨</div>
+        <div className="absolute text-3xl text-cyan-300/8 animate-twinkle delay-4000" style={{top: '75%', left: '12%'}}></div>
         <div className="absolute text-3xl text-pink-300/12 animate-bounce-slow delay-1500" style={{bottom: '20%', right: '25%'}}>🎨</div>
         <div className="absolute text-2xl text-purple-400/15 animate-twinkle" style={{top: '85%', right: '18%'}}>⭐</div>
 
@@ -95,7 +95,7 @@ export function SmallGallery() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400">
             Gallery Showcase
           </span>
-          <div className="absolute -top-2 -right-6 text-2xl animate-twinkle">✨</div>
+          <div className="absolute -top-2 -right-6 text-2xl animate-twinkle"></div>
         </h2>
         
         <p className="text-gray-400 max-w-2xl mx-auto">
@@ -304,7 +304,7 @@ export function SmallGallery() {
         <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-500/15 to-blue-500/15 px-8 py-4 rounded-full border border-purple-500/25 backdrop-blur-sm">
           <div className="w-4 h-4 bg-yellow-400 rounded-full animate-pulse" />
           <span className="text-yellow-400 font-semibold text-lg">Discover more in our complete gallery</span>
-          <div className="text-3xl animate-bounce-slow">🖼️</div>
+         
         </div>
       </div>
 

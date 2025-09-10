@@ -29,12 +29,7 @@ export function Services() {
         <div className="absolute w-24 h-24 bg-gradient-to-br from-yellow-400/15 to-transparent rounded-full animate-bounce-slow" style={{top: '65%', right: '25%'}} />
         <div className="absolute w-20 h-20 border-2 border-amber-300/10 rounded-lg rotate-12 animate-spin-slow" style={{top: '40%', left: '10%'}} />
 
-        {/* Service-themed floating icons */}
-        <div className="absolute text-5xl text-yellow-400/15 animate-float-gentle" style={{top: '20%', right: '25%'}}>📸</div>
-        <div className="absolute text-4xl text-amber-400/12 animate-float-gentle delay-1500" style={{bottom: '25%', left: '12%'}}>🎬</div>
-        <div className="absolute text-3xl text-yellow-300/10 animate-twinkle delay-3000" style={{top: '70%', left: '8%'}}>✨</div>
-        <div className="absolute text-3xl text-amber-300/15 animate-bounce-slow delay-2000" style={{bottom: '15%', right: '18%'}}>🏠</div>
-        <div className="absolute text-2xl text-yellow-400/20 animate-twinkle" style={{top: '80%', right: '12%'}}>⭐</div>
+       
 
         {/* Floating particles */}
         {[...Array(30)].map((_, i) => (
@@ -97,7 +92,7 @@ export function Services() {
               <div className="absolute inset-0 text-yellow-500 blur-lg opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
               
               {/* Floating sparkle */}
-              <div className="absolute -right-6 -top-2 text-lg animate-twinkle">✨</div>
+              <div className="absolute -right-6 -top-2 text-lg animate-twinkle"></div>
             </h2>
             
             {/* Subtle underline */}
@@ -122,7 +117,7 @@ export function Services() {
             
             {/* Animated crown icon */}
             <div className="absolute -top-4 -right-8 text-3xl text-yellow-400 animate-bounce-slow">
-              👑
+              
             </div>
             
             {/* Enhanced underline */}
@@ -211,7 +206,7 @@ export function Services() {
           <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-500/15 to-amber-500/15 px-8 py-4 rounded-full border border-yellow-500/25 backdrop-blur-sm">
             <div className="w-4 h-4 bg-yellow-400 rounded-full animate-pulse" />
             <span className="text-yellow-300 font-semibold text-lg">Ready to showcase your property with professional quality?</span>
-            <div className="text-3xl animate-bounce-slow">📸</div>
+           
           </div>
         </div>
       </div>

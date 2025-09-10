@@ -91,7 +91,7 @@ export function NewsLetter() {
               
               {/* Floating newsletter icon */}
               <div className="absolute -top-2 -left-8 text-2xl text-yellow-400 animate-bounce-slow">
-                📧
+                
               </div>
             </div>
 
@@ -120,8 +120,8 @@ export function NewsLetter() {
               </div>
               
               {/* Decorative sparkles */}
-              <div className="absolute -top-2 -left-4 text-xl text-yellow-400 animate-twinkle">✨</div>
-              <div className="absolute bottom-2 -right-2 text-lg text-amber-400 animate-twinkle delay-1000">⭐</div>
+              <div className="absolute -top-2 -left-4 text-xl text-yellow-400 animate-twinkle"></div>
+              <div className="absolute bottom-2 -right-2 text-lg text-amber-400 animate-twinkle delay-1000"></div>
             </h1>
             
             {/* Enhanced Description */}
@@ -213,9 +213,9 @@ export function NewsLetter() {
             </div>
 
             {/* Floating testimonial */}
-            <div className="absolute -bottom-8 -right-4 opacity-60 hidden lg:block">
+            <div className="absolute -bottom-14 -right-4 opacity-60 hidden lg:block">
               <div className="bg-black/40 backdrop-blur-sm border border-yellow-400/20 rounded-xl px-4 py-2 animate-float-gentle">
-                <div className="flex items-center space-x-2 text-yellow-300 text-xs">
+                <div className="flex items-center space-x-3 text-yellow-300 text-xs">
                   <span>⭐⭐⭐⭐⭐</span>
                   <span>"Amazing service!" - Sarah K.</span>
                 </div>
