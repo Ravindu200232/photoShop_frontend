@@ -38,11 +38,11 @@ export function Gallery() {
         <div className="absolute w-24 h-24 border-2 border-amber-300/5 rounded-lg rotate-12 animate-spin-slow" style={{top: '50%', left: '10%'}} />
 
         {/* Gallery-themed floating icons */}
-        <div className="absolute text-5xl text-yellow-400/6 animate-float-gentle" style={{top: '20%', right: '30%'}}>🖼️</div>
-        <div className="absolute text-4xl text-amber-400/5 animate-float-gentle delay-3000" style={{bottom: '25%', left: '12%'}}>📸</div>
-        <div className="absolute text-3xl text-yellow-300/4 animate-twinkle delay-5000" style={{top: '70%', left: '8%'}}>✨</div>
-        <div className="absolute text-3xl text-amber-300/6 animate-bounce-slow delay-2000" style={{bottom: '15%', right: '22%'}}>🎨</div>
-        <div className="absolute text-2xl text-yellow-400/8 animate-twinkle" style={{top: '80%', right: '15%'}}>⭐</div>
+        <div className="absolute text-5xl text-yellow-400/6 animate-float-gentle" style={{top: '20%', right: '30%'}}></div>
+        <div className="absolute text-4xl text-amber-400/5 animate-float-gentle delay-3000" style={{bottom: '25%', left: '12%'}}></div>
+        <div className="absolute text-3xl text-yellow-300/4 animate-twinkle delay-5000" style={{top: '70%', left: '8%'}}></div>
+        <div className="absolute text-3xl text-amber-300/6 animate-bounce-slow delay-2000" style={{bottom: '15%', right: '22%'}}></div>
+        <div className="absolute text-2xl text-yellow-400/8 animate-twinkle" style={{top: '80%', right: '15%'}}></div>
 
         {/* Floating particles */}
         {[...Array(20)].map((_, i) => (
@@ -94,7 +94,7 @@ export function Gallery() {
           
           {/* Floating camera icon */}
           <div className="absolute -right-8 -top-2 text-2xl text-yellow-400 animate-bounce-slow">
-            📷
+            
           </div>
         </h2>
         
@@ -116,8 +116,8 @@ export function Gallery() {
           }`} />
           
           {/* Floating sparkles */}
-          <div className="absolute -top-4 -left-8 text-xl text-yellow-400 animate-twinkle">✨</div>
-          <div className="absolute -bottom-2 -right-8 text-lg text-amber-400 animate-twinkle delay-1000">⭐</div>
+          <div className="absolute -top-4 -left-8 text-xl text-yellow-400 animate-twinkle"></div>
+          <div className="absolute -bottom-2 -right-8 text-lg text-amber-400 animate-twinkle delay-1000"></div>
         </h1>
 
         {/* Gallery statistics */}
@@ -250,7 +250,7 @@ export function Gallery() {
           <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-yellow-500/10 to-amber-500/10 px-8 py-4 rounded-full border border-yellow-500/20 backdrop-blur-sm">
             <div className="w-4 h-4 bg-yellow-400 rounded-full animate-pulse" />
             <span className="text-yellow-300 font-semibold text-lg">Loved what you saw? Let's create something amazing together!</span>
-            <div className="text-3xl animate-bounce-slow">✨</div>
+            <div className="text-3xl animate-bounce-slow"></div>
           </div>
         </div>
       </div>

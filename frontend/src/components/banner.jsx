@@ -76,7 +76,7 @@ export function Banner() {
             </span>
             
             {/* Animated Underline */}
-            <div className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-orange-600 to-red-600 transition-all duration-1500 delay-1000 ${
+            <div className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-yellow-600 to-orange-300 transition-all duration-1500 delay-1000 ${
               isVisible ? 'w-full' : 'w-0'
             }`} />
           </h1>
@@ -84,7 +84,7 @@ export function Banner() {
           {/* Welcome Text with Animation */}
           <div className="mb-8">
             <span 
-              className={`text-red-600 text-2xl font-bold inline-block transition-all duration-800 delay-700 ${
+              className={`text-yellow-400 text-2xl font-bold inline-block transition-all duration-800 delay-700 ${
                 isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
               }`}
             >
@@ -120,9 +120,9 @@ export function Banner() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <Link to="/package">
-              <button className="relative inline-block w-full sm:w-auto px-8 py-4 border-4 border-orange-600 text-orange-600 font-semibold uppercase tracking-wider overflow-hidden group hover:text-black transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-600/25">
+              <button className="relative inline-block w-full sm:w-auto px-8 py-4 border-4 border-yellow-500 text-orange-300 font-semibold uppercase tracking-wider overflow-hidden group hover:text-black transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-600/25">
                 {/* Original Background Animation */}
-                <span className="absolute w-0 h-full bg-orange-600 top-0 left-0 group-hover:w-full transition-all duration-500 ease-in-out z-0"></span>
+                <span className="absolute w-0 h-full bg-yellow-300 top-0 left-0 group-hover:w-full transition-all duration-500 ease-in-out z-0"></span>
                 
                 {/* Additional Glow Effects */}
                 <span className="absolute inset-0 bg-orange-600/20 scale-0 group-hover:scale-100 transition-transform duration-300 rounded z-0"></span>

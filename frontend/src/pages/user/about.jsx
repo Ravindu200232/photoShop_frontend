@@ -36,11 +36,11 @@ const About = () => {
         <div className="absolute w-24 h-24 border-2 border-amber-300/6 rounded-lg rotate-12 animate-spin-slow" style={{top: '50%', left: '10%'}} />
 
         {/* About-themed floating icons */}
-        <div className="absolute text-5xl text-yellow-400/8 animate-float-gentle" style={{top: '20%', right: '30%'}}>👤</div>
-        <div className="absolute text-4xl text-amber-400/6 animate-float-gentle delay-3000" style={{bottom: '25%', left: '12%'}}>📷</div>
-        <div className="absolute text-3xl text-yellow-300/5 animate-twinkle delay-5000" style={{top: '70%', left: '8%'}}>✨</div>
-        <div className="absolute text-3xl text-amber-300/8 animate-bounce-slow delay-2000" style={{bottom: '15%', right: '22%'}}>🎨</div>
-        <div className="absolute text-2xl text-yellow-400/10 animate-twinkle" style={{top: '80%', right: '15%'}}>⭐</div>
+        <div className="absolute text-5xl text-yellow-400/8 animate-float-gentle" style={{top: '20%', right: '30%'}}></div>
+        <div className="absolute text-4xl text-amber-400/6 animate-float-gentle delay-3000" style={{bottom: '25%', left: '12%'}}></div>
+        <div className="absolute text-3xl text-yellow-300/5 animate-twinkle delay-5000" style={{top: '70%', left: '8%'}}></div>
+        <div className="absolute text-3xl text-amber-300/8 animate-bounce-slow delay-2000" style={{bottom: '15%', right: '22%'}}></div>
+        <div className="absolute text-2xl text-yellow-400/10 animate-twinkle" style={{top: '80%', right: '15%'}}></div>
 
         {/* Floating particles */}
         {[...Array(18)].map((_, i) => (
@@ -107,7 +107,7 @@ const About = () => {
           
           {/* Floating sparkle */}
           <div className="absolute -top-4 -right-8 text-2xl text-yellow-400 animate-twinkle">
-            ✨
+            
           </div>
         </h1>
       </motion.div>
@@ -162,7 +162,7 @@ const About = () => {
           <div className="absolute -bottom-4 -left-4 opacity-60">
             <div className="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 backdrop-blur-sm border border-amber-400/20 rounded-full px-3 py-2 animate-pulse-slow">
               <div className="flex items-center space-x-1 text-amber-300 text-xs">
-                <span>📍</span>
+                <span></span>
                 <span>Hamilton</span>
               </div>
             </div>
@@ -286,7 +286,7 @@ const About = () => {
             
             {/* Location pin icon */}
             <div className="absolute -right-8 -top-2 text-2xl text-yellow-400 animate-bounce-slow">
-              📍
+              
             </div>
           </h2>
 

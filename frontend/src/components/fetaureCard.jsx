@@ -41,7 +41,7 @@ const FeatureCards = () => {
         
         {/* Medium floating elements */}
         <div className="absolute w-64 h-64 bg-gradient-to-br from-amber-400/5 to-yellow-500/5 rounded-full blur-xl animate-pulse-slow" style={{top: '40%', right: '10%'}} />
-        <div className="absolute w-48 h-48 bg-gradient-to-br from-orange-500/8 to-red-500/8 rounded-full blur-lg animate-pulse-slow delay-1500" style={{bottom: '30%', left: '10%'}} />
+        <div className="absolute w-48 h-48 bg-gradient-to-br from-yellow-300/5 to-amber-400/5 rounded-full blur-lg animate-pulse-slow delay-1000" style={{bottom: '30%', left: '15%'}} />
 
         {/* Geometric shapes */}
         <div className="absolute w-32 h-32 border border-amber-500/10 rounded-full animate-spin-very-slow" style={{top: '20%', left: '20%'}} />
@@ -101,7 +101,7 @@ const FeatureCards = () => {
             
             {/* Floating icon */}
             <div className="absolute -right-8 -top-2 text-amber-400 text-xl animate-bounce-slow">
-              ⭐
+            
             </div>
           </div>
 
@@ -120,8 +120,8 @@ const FeatureCards = () => {
             </span>
             
             {/* Decorative sparkles */}
-            <div className="absolute -top-4 -right-4 text-2xl text-amber-400 animate-twinkle">✨</div>
-            <div className="absolute -bottom-2 -left-4 text-xl text-yellow-400 animate-twinkle delay-1000">💎</div>
+            <div className="absolute -top-4 -right-4 text-2xl text-amber-400 animate-twinkle"></div>
+            <div className="absolute -bottom-2 -left-4 text-xl text-yellow-400 animate-twinkle delay-1000"></div>
           </h2>
 
           {/* Enhanced description */}
@@ -190,7 +190,7 @@ const FeatureCards = () => {
           <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-amber-500/10 to-yellow-500/10 px-8 py-4 rounded-full border border-amber-500/20 backdrop-blur-sm">
             <div className="w-3 h-3 bg-amber-400 rounded-full animate-pulse" />
             <span className="text-amber-300 font-medium">Ready to showcase your property?</span>
-            <div className="text-2xl animate-bounce-slow">📸</div>
+            <div className="text-2xl animate-bounce-slow"></div>
           </div>
 
           {/* Feature highlights */}

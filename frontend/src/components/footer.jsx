@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="absolute w-24 h-24 border-2 border-amber-300/5 rounded-lg rotate-12 animate-spin-slow" style={{top: '60%', left: '25%'}} />
 
         {/* Footer-themed floating icons */}
-        <div className="absolute text-4xl text-yellow-400/6 animate-float-gentle" style={{top: '25%', right: '35%'}}>📧</div>
+        <div className="absolute text-4xl text-yellow-400/6 animate-float-gentle" style={{top: '25%', right: '35%'}}></div>
         <div className="absolute text-3xl text-amber-400/5 animate-float-gentle delay-3000" style={{bottom: '30%', left: '15%'}}>📱</div>
         <div className="absolute text-2xl text-yellow-300/4 animate-twinkle delay-5000" style={{top: '80%', left: '12%'}}>✨</div>
         <div className="absolute text-3xl text-amber-300/6 animate-bounce-slow delay-2000" style={{bottom: '20%', right: '25%'}}>🌟</div>
@@ -83,7 +83,7 @@ export default function Footer() {
               
               {/* Floating camera icon */}
               <div className="absolute -right-6 -top-2 text-lg text-yellow-400 animate-bounce-slow opacity-60">
-                📷
+                
               </div>
             </h1>
             
@@ -131,7 +131,7 @@ export default function Footer() {
               }`} />
               
               <div className="absolute -right-6 -top-2 text-lg text-amber-400 animate-bounce-slow opacity-60 delay-1000">
-                🎬
+                
               </div>
             </h1>
             
@@ -175,15 +175,15 @@ export default function Footer() {
               }`} />
               
               <div className="absolute -right-6 -top-2 text-lg text-orange-400 animate-bounce-slow opacity-60 delay-2000">
-                📞
+                
               </div>
             </h1>
             
             <div className="space-y-3 text-gray-400 relative z-10">
               {[
-                { icon: "📧", text: "Email: rohitha.me94@gmail.com" },
-                { icon: "📱", text: "Phone: +64 204166 3202" },
-                { icon: "📍", text: "Location: 224 Sandwich Road, St Andrews, Hamilton 3200 New zealand" }
+                { icon: "", text: "Email: rohitha.me94@gmail.com" },
+                { icon: "", text: "Phone: +64 204166 3202" },
+                { icon: "", text: "Location: 224 Sandwich Road, St Andrews, Hamilton 3200 New zealand" }
               ].map((item, index) => (
                 <p key={index} className={`transition-all duration-800 delay-${(index + 6) * 200} ${
                   isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
@@ -213,7 +213,7 @@ export default function Footer() {
               }`} />
               
               <div className="absolute -right-6 -top-2 text-lg text-yellow-400 animate-bounce-slow opacity-60 delay-3000">
-                👥
+                
               </div>
             </h1>
             
@@ -291,9 +291,9 @@ export default function Footer() {
         {/* Floating "Back to top" hint */}
         <div className="mt-4 opacity-60">
           <div className="inline-flex items-center space-x-2 text-yellow-400 text-xs animate-bounce-slow">
-            <span>✨</span>
+            <span></span>
             <span>Crafted with passion for photography</span>
-            <span>✨</span>
+            <span></span>
           </div>
         </div>
       </div>

@@ -29,9 +29,9 @@ export function Team() {
         <div className="absolute w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-transparent rounded-full animate-bounce-slow" style={{top: '70%', right: '30%'}} />
 
         {/* Camera-themed floating icons */}
-        <div className="absolute text-4xl text-yellow-400/20 animate-float-gentle" style={{top: '15%', right: '20%'}}>📸</div>
-        <div className="absolute text-3xl text-amber-400/15 animate-float-gentle delay-1000" style={{bottom: '20%', left: '10%'}}>🎯</div>
-        <div className="absolute text-2xl text-yellow-300/10 animate-twinkle" style={{top: '60%', left: '5%'}}>⭐</div>
+        <div className="absolute text-4xl text-yellow-400/20 animate-float-gentle" style={{top: '15%', right: '20%'}}></div>
+        <div className="absolute text-3xl text-amber-400/15 animate-float-gentle delay-1000" style={{bottom: '20%', left: '10%'}}></div>
+        <div className="absolute text-2xl text-yellow-300/10 animate-twinkle" style={{top: '60%', left: '5%'}}></div>
 
         {/* Floating particles */}
         {[...Array(20)].map((_, i) => (
@@ -162,7 +162,7 @@ export function Team() {
                 
                 {/* Floating camera icon */}
                 <div className="absolute -right-8 -top-2 text-2xl animate-bounce-slow">
-                  📸
+                  
                 </div>
               </h4>
               
@@ -174,8 +174,8 @@ export function Team() {
                 </span>
                 
                 {/* Decorative sparkles */}
-                <div className="absolute -top-2 -right-2 text-lg text-yellow-400 animate-twinkle">✨</div>
-                <div className="absolute bottom-2 -left-2 text-sm text-amber-400 animate-twinkle delay-1000">⭐</div>
+                <div className="absolute -top-2 -right-2 text-lg text-yellow-400 animate-twinkle"></div>
+                <div className="absolute bottom-2 -left-2 text-sm text-amber-400 animate-twinkle delay-1000"></div>
               </h1>
             </div>
             
@@ -229,7 +229,7 @@ export function Team() {
               <div className="flex items-center space-x-3 text-yellow-400 text-sm">
                 <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse" />
                 <span>Ready to capture your property's best moments?</span>
-                <div className="text-lg animate-bounce-slow">🎯</div>
+                <div className="text-lg animate-bounce-slow"></div>
               </div>
             </div>
           </div>
