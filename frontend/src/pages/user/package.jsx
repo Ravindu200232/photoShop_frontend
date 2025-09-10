@@ -163,14 +163,7 @@ export default function Package() {
         </h2>
         
         <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-200 to-white mt-4 mb-8 leading-tight relative">
-          <span className="relative">
-            Choose Your Perfect Experience
-            
-            {/* Title shadow effect */}
-            <div className="absolute inset-0 text-4xl md:text-5xl font-black text-white  opacity-90 -z-10">
-              Choose Your Perfect Experience
-            </div>
-          </span>
+          
           
           {/* Animated underline */}
           <div className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-500 transition-all duration-1500 delay-800 ${
