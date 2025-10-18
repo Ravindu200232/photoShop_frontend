@@ -170,14 +170,14 @@ export function Services() {
           <div className={`grid grid-cols-3 gap-8 mt-12 max-w-2xl mx-auto transition-all duration-1000 delay-1400 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}>
-            <div className="text-center group">
+            {/* <div className="text-center group">
               <div className="text-3xl font-bold text-yellow-400 group-hover:scale-110 transition-transform duration-300">500+</div>
               <div className="text-sm text-gray-500 mt-1">Properties Captured</div>
             </div>
             <div className="text-center group">
               <div className="text-3xl font-bold text-amber-400 group-hover:scale-110 transition-transform duration-300">98%</div>
               <div className="text-sm text-gray-500 mt-1">Client Satisfaction</div>
-            </div>
+            </div> */}
             <div className="text-center group">
               <div className="text-3xl font-bold text-yellow-300 group-hover:scale-110 transition-transform duration-300">24h</div>
               <div className="text-sm text-gray-500 mt-1">Fast Delivery</div>

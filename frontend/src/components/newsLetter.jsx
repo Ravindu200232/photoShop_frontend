@@ -215,10 +215,10 @@ export function NewsLetter() {
             {/* Floating testimonial */}
             <div className="absolute -bottom-14 -right-4 opacity-60 hidden lg:block">
               <div className="bg-black/40 backdrop-blur-sm border border-yellow-400/20 rounded-xl px-4 py-2 animate-float-gentle">
-                <div className="flex items-center space-x-3 text-yellow-300 text-xs">
+                {/* <div className="flex items-center space-x-3 text-yellow-300 text-xs">
                   <span>⭐⭐⭐⭐⭐</span>
                   <span>"Amazing service!" - Sarah K.</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -207,7 +207,7 @@ export function Team() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
               <div className="grid grid-cols-3 gap-6">
-                <div className="text-center group">
+                {/* <div className="text-center group">
                   <div className="text-2xl font-bold text-yellow-400 group-hover:scale-110 transition-transform duration-300">5+</div>
                   <div className="text-xs text-gray-500">Years Experience</div>
                 </div>
@@ -218,7 +218,7 @@ export function Team() {
                 <div className="text-center group">
                   <div className="text-2xl font-bold text-yellow-300 group-hover:scale-110 transition-transform duration-300">100%</div>
                   <div className="text-xs text-gray-500">Satisfaction</div>
-                </div>
+                </div> */}
               </div>
             </div>
 

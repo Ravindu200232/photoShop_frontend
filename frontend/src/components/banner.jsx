@@ -47,7 +47,7 @@ export function Banner() {
       </div>
 
       {/* Content Container */}
-      <div className="container absolute top-72 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div className="container absolute top-60 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Empty space on left side for larger screens */}
         <div className="hidden md:block"></div>
 

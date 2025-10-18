@@ -187,7 +187,7 @@ const Reviews = () => {
           <div className={`flex justify-center space-x-8 mt-6 transition-all duration-1000 delay-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            <div className="text-center group">
+            {/* <div className="text-center group">
               <div className="text-2xl font-bold text-yellow-400 group-hover:scale-110 transition-transform duration-300">4.9/5</div>
               <div className="text-xs text-gray-500">Average Rating</div>
             </div>
@@ -198,7 +198,7 @@ const Reviews = () => {
             <div className="text-center group">
               <div className="text-2xl font-bold text-yellow-300 group-hover:scale-110 transition-transform duration-300">100%</div>
               <div className="text-xs text-gray-500">Satisfaction</div>
-            </div>
+            </div> */}
           </div>
         </div>
 

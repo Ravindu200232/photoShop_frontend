@@ -211,14 +211,14 @@ const FeatureCards = () => {
         </div>
 
         {/* Center bottom satisfaction badge */}
-        <div className="flex justify-center mt-8">
+        {/* <div className="flex justify-center mt-8">
           <div className="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 backdrop-blur-sm border border-amber-500/30 rounded-full px-6 py-3 animate-float-gentle">
             <div className="flex items-center space-x-3">
               <div className="text-amber-400 text-lg">⭐⭐⭐⭐⭐</div>
               <span className="text-white text-sm font-medium">100% Satisfaction Guaranteed</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
 
       {/* Enhanced CSS Animations */}

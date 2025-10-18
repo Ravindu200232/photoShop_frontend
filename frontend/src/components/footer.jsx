@@ -249,12 +249,12 @@ export default function Footer() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
               <div className="text-center">
-                <div className="text-sm font-bold text-yellow-400">2.5K</div>
-                <div className="text-xs text-gray-500">Followers</div>
+                {/* <div className="text-sm font-bold text-yellow-400">2.5K</div>
+                <div className="text-xs text-gray-500">Followers</div> */}
               </div>
               <div className="text-center">
-                <div className="text-sm font-bold text-amber-400">150+</div>
-                <div className="text-xs text-gray-500">Projects</div>
+                {/* <div className="text-sm font-bold text-amber-400">150+</div>
+                <div className="text-xs text-gray-500">Projects</div> */}
               </div>
             </div>
           </div>
