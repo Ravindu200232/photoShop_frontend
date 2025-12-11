@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 export default function HamiltonHomeForm() {
-  // ⚠️ REPLACE THESE WITH YOUR EMAILJS CREDENTIALS ⚠️
   const EMAILJS_PUBLIC_KEY = '-YRQaQFHvRDjBGE8I';
   const EMAILJS_TEMPLATE_ID = 'template_knwk2wg';
   const EMAILJS_SERVICE_ID = 'service_1cpy2rj';
@@ -119,16 +118,13 @@ Please contact this prospect as soon as possible.`
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* Dark overlay for better contrast */}
       <div className="absolute inset-0 bg-black/40"></div>
       
       <div className="relative z-10 w-full max-w-5xl">
-        {/* Main Glass Container */}
         <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 shadow-2xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Left Column - Form */}
             <div className="p-8 md:p-10">
-              {/* Header */}
               <div className="mb-10">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
                   Welcome! Let's Find Your Perfect Home in Hamilton
@@ -138,14 +134,12 @@ Please contact this prospect as soon as possible.`
                 </p>
               </div>
 
-              {/* Privacy Notice */}
               <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 mb-8">
                 <p className="text-white text-sm">
                   <span className="font-semibold text-blue-200">Your Privacy Matters:</span> Your information will be kept confidential and used only to help you find the right property.
                 </p>
               </div>
 
-              {/* Status Messages */}
               {submitStatus === 'success' && (
                 <div className="bg-green-500/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-4 mb-6">
                   <p className="text-green-100 font-semibold">✓ Thank you! Your inquiry has been sent successfully.</p>
@@ -158,9 +152,7 @@ Please contact this prospect as soon as possible.`
                 </div>
               )}
 
-              {/* Form */}
               <div className="space-y-6">
-                {/* Full Name */}
                 <div>
                   <label className="block text-white font-medium mb-2 text-sm uppercase tracking-wider">
                     Full Name <span className="text-red-400">*</span>
@@ -175,7 +167,6 @@ Please contact this prospect as soon as possible.`
                   />
                 </div>
 
-                {/* Email */}
                 <div>
                   <label className="block text-white font-medium mb-2 text-sm uppercase tracking-wider">
                     Email Address <span className="text-red-400">*</span>
@@ -190,7 +181,6 @@ Please contact this prospect as soon as possible.`
                   />
                 </div>
 
-                {/* Phone */}
                 <div>
                   <label className="block text-white font-medium mb-2 text-sm uppercase tracking-wider">
                     Phone Number <span className="text-red-400">*</span>
@@ -205,7 +195,6 @@ Please contact this prospect as soon as possible.`
                   />
                 </div>
 
-                {/* Looking To */}
                 <div>
                   <label className="block text-white font-medium mb-3 text-sm uppercase tracking-wider">
                     Are you looking to <span className="text-red-400">*</span>
@@ -229,7 +218,6 @@ Please contact this prospect as soon as possible.`
                   </div>
                 </div>
 
-                {/* Contact Method */}
                 <div>
                   <label className="block text-white font-medium mb-3 text-sm uppercase tracking-wider">
                     Preferred Contact Method
@@ -253,7 +241,6 @@ Please contact this prospect as soon as possible.`
                   </div>
                 </div>
 
-                {/* Submit Button */}
                 <button
                   onClick={handleSubmit}
                   disabled={isSubmitting || !emailJSLoaded}
@@ -266,7 +253,6 @@ Please contact this prospect as soon as possible.`
 
             {/* Right Column - Agent Info */}
             <div className="bg-gradient-to-b from-blue-900/40 to-blue-800/30 p-8 md:p-10 flex flex-col justify-center backdrop-blur-xl border-l border-white/10">
-              {/* Agent Photo */}
               <div className="flex justify-center mb-8">
                 <div className="relative">
                   <div className="absolute inset-0 bg-white/20 rounded-full blur-xl"></div>
@@ -285,7 +271,6 @@ Please contact this prospect as soon as possible.`
                 </div>
               </div>
 
-              {/* Agent Info */}
               <div className="text-center text-white">
                 <h2 className="text-3xl font-bold mb-2">Roy Dissanayake</h2>
                 <p className="text-blue-200 text-sm font-medium tracking-wider uppercase mb-1">
@@ -295,20 +280,38 @@ Please contact this prospect as soon as possible.`
                   Licensed REAA 2008
                 </p>
                 
-                {/* Bullet Points */}
-                <div className="space-y-4 text-left mb-10">
-                  
+                {/* Updated Bullet Points */}
+                <div className="space-y-3 text-left mb-8">
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-white/90 text-base">Free appraisal</p>
+                    <p className="text-white/90 text-sm font-medium">Free Market Appraisal</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-white/90 text-base">Honest and trusted advice</p>
+                    <p className="text-white/90 text-sm font-medium">Trustworthy & Reliable Service</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-white/90 text-sm font-medium">Honest, Straightforward Advice</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-white/90 text-sm font-medium">Professional & Friendly</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-white/90 text-sm font-medium">Stress-Free Selling Experience</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-white/90 text-sm font-medium">Strong Negotiation Skills</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-white/90 text-sm font-medium">Committed to Getting You the Best Price</p>
                   </div>
                 </div>
 
-                {/* Logo */}
                 <div className="flex justify-center mb-8">
                   <img
                     src="/IMG_0573.PNG"
@@ -320,9 +323,8 @@ Please contact this prospect as soon as possible.`
                   />
                 </div>
 
-                {/* Tagline */}
                 <div className="border-t border-white/10 pt-8">
-                  <p className="text-white/80 italic text-base">
+                  <p className="text-white/80 italic text-sm">
                     "Whether you're buying, selling, or investing, we'll match you with properties that fit your needs."
                   </p>
                 </div>
@@ -331,8 +333,7 @@ Please contact this prospect as soon as possible.`
           </div>
         </div>
 
-        {/* Footer Note */}
-        <div className="text-center mt-6 text-white/60 text-sm">
+        <div className="text-center mt-6 text-white/60 text-xs">
           <p>© 2024 Roy Dissanayake Real Estate Services | Hamilton, ON</p>
         </div>
       </div>
