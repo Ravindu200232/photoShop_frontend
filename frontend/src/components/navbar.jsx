@@ -76,8 +76,8 @@ export function Navbar() {
 
       {/* Enhanced Desktop Navigation */}
       <div className="hidden md:flex items-center space-x-10 text-white relative z-10">
-        {['Home', 'About', 'Gallery', 'Package'].map((item, index) => {
-          const routes = ['/', '/contact', '/gallery', '/package'];
+        {['Home', 'About', 'Gallery', 'Package',].map((item, index) => {
+          const routes = ['/', '/contact', '/gallery', '/package',];
           return (
             <div key={item} className="relative group">
               <Link 
