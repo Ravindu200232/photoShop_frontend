@@ -297,10 +297,7 @@ Please contact this prospect as soon as possible.`
                 
                 {/* Bullet Points */}
                 <div className="space-y-4 text-left mb-10">
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-white/90 text-base">Helping families find their dream homes</p>
-                  </div>
+                  
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <p className="text-white/90 text-base">Free appraisal</p>
