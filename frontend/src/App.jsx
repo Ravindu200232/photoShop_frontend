@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import { Gallery } from "./pages/user/gallery";
 import About from "./pages/user/about";
 import HamiltonHomeForm from "./pages/user/form";
+import CsvPage from "./pages/user/csv";
 
 function DefaultLayout() {
   return (
@@ -20,6 +21,7 @@ function DefaultLayout() {
           <Route path="/package" element={<Package />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<About />} />
+          <Route path="/csv" element={<CsvPage />} />
         </Routes>
       </div>
       <Footer />
